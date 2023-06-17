@@ -1,0 +1,55 @@
+.simple-container {
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+.simple_info {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.simple_img {
+  max-width: 400px;
+}
+
+.simple_img > img {
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid black;
+}
+.btn {
+  border: none;
+  background-color: white;
+}
+.btn :hover {
+  color: rgb(249, 18, 10);
+}
+@media screen and (max-width: 830px) {
+  .simple_info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simple_img {
+    max-width: 300px;
+  }
+}
